@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root {
+    --primary-color: #F5F8FA;
+    --secondary-color: #FFF;
+    --blue-bg: #1179BF;
+    --text-color: #1D2C3C;
+    --button-color: #038E7D;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    /* background-color: var(--primary-color); */ 
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Lato', monospace;
+
+}
+
+.container {
+    height: 100%;
+    background: url(images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: 10; */
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    
+
+}
+
+/* .overall-container{
+    z-index: 2;
+} */
+
+nav {
+    z-index: 20;
+    position: relative;
+    
+}
+
+section{
+    z-index: 10;
+    position: relative;
+}
+
+
+/*.content-container {
+    z-index: 20;
+} */
+
+
+/* nav {
+    background-color: var(--blue-bg); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.Navbar{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    /* padding: 0px 8%; */
+    justify-content: space-between;
+    /* border-bottom: #1D2C3C 2px solid; */
+    padding: 0px 2%;
+    align-items: center;
+    
+    
+}
+
+.brand-name {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.Navbar img{
+    width: 200px;
+    height: 39px;
+    flex-shrink: 0;
+}
+.Navbar ul {
+    float: right;
+    display: none;
+    /* margin-right: 40px; */
+}
+
+.hamburger {
+    display: block;
+}
+.mobile-nav {
+    display: block;
+    
+}
+
+.request {
+    display: none;
+    /* background-color: #8B4513; */
+    background-color: transparent;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    /* border: 2px solid #8B4513; */
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+
+.request2{
+    background-color: transparent;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.request2:hover{
+    background-color: #8B4513;
+    border: none;
+    padding: 13px 21px 13px 21px;
+}
+
+.request:hover {
+    background-color: #8B4513;
+    border: none;
+    padding: 13px 21px 13px 21px;
+    /* color: #000;
+    border: #000 1px solid;
+    padding: 11px 19px 11px 19px;
+    cursor: pointer; */
+}
+
+@media (min-width: 768px) {
+    .Navbar ul {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .hamburger:focus {
+        outline: none;
+    }
+    .mobile-nav{
+        display: none;
+        
+    }
+
+    .request{
+        display: block;
+    }
+}
+
+/* @media (max-width: 900px) {
+    .Navbar li {
+        display: inline-block;
+        margin: 0 40px; 
+        line-height: normal;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.01px;
+        cursor: pointer;
+        
+    
+    }
+} */
+
+.Navbar li {
+    display: inline-block;
+    margin: 0 15px; 
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    cursor: pointer;
+    
+    
+
+}
+
+.Navbar li a {
+    color: #fff;
+}
+.Navbar li button {
+    width: 91px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid #646E7A;
+    background: none;
+    cursor: pointer;
+}
+
+.wrapper{
+    border-bottom:#E0E6EA 1px solid;
+    padding: 20px 0px 20px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .menu li a, .menu li a:hover
+{ padding: 0 0 0 40px;
+  display: block;
+  background: transparent url(link.png) no-repeat left center;}  */
+
+.menu .active{ 
+    background-color: #000;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* color: blue; */
+} 
+
+.menu li a:hover {
+    color: #E0E6EA;
+    
+}
+
+.mobile-nav-css a {
+    color: #000;
+}
+
+.mobile-nav-css .active{
+    background-color: #000;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-nav-css a:hover{
+    /* background-color: red; */
+    color: #E0E6EA;
+}
+
+/* Hamburger */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: 0.25s;
+    position: relative;
+    /* color: #fff; */
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+} 
+.hamburger-bottom {
+    transform: translateY(14px);
+} 
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+    
+}
+
+.open .hamburger-middle{
+    display: none;
+    
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+    
+}
+
+.nav-css {
+    position: fixed;
+
+}
+
+.mobile-nav-css {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    width: auto;
+    left: 1.5rem; /* 6 * 0.25 = 1.5 */
+    right: 1.5rem; /* 6 * 0.25 = 1.5 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+
+
+
+}
+
+
+
+.mobile-nav-open {
+    display: flex; /* show the mobile menu when the custom class is present */
+    
+}
+
+.home-content-container {
+    padding: 0px 5% 0px 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    
+    
+}
+
+.home-content{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-content .brand-name{
+    color: #fff;
+    font-size: 5rem;
+}
+.home-content .description{
+    color: #E0E6EA;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* letter-spacing: 2px; */
+
+    
+}
+
+.description .brand-intro {
+    letter-spacing: 5px;
+}
+
+.description .brand-name{
+    letter-spacing: 2px;
+}
+
+.description2{
+    padding-top: 10px;
+}
+.buttons {
+    padding-top: 20px;
+}
