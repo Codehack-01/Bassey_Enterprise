@@ -715,6 +715,7 @@ section{
     background: #fff;
     padding: 30px;
     border-radius: 6px;
+    border: #8B4513 1px solid;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 
