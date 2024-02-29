@@ -749,3 +749,30 @@ section{
     padding-top: 15px;
     text-align: center;
 }
+.socials {
+    align-items: center;
+    display: flex;
+}
+.socials a{
+    color: #000;
+    font-size: 1.3rem;
+}
+.socials a:hover {
+    color: #1179BF;
+}
+.socials span {
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    background-color: #8B4513;
+    color: #fff;
+}
+
+footer p{
+    text-align: center;
+}
