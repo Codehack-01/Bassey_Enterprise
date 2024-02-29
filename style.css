@@ -523,7 +523,7 @@ section{
 
 .home-content .brand-name{
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .home-content .description{
     color: #E0E6EA;
@@ -605,6 +605,11 @@ section{
         
         padding: 50px 3%;
         
+    }
+
+    .home-content .brand-name{
+        color: #fff;
+        font-size: 3.3rem;
     }
     
     
