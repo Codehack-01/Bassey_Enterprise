@@ -909,6 +909,7 @@ footer p{
 .product {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .buttons2 {
