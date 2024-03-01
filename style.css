@@ -588,7 +588,7 @@ section{
     color: var(--paragraph);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     
 
     .left_pane {
@@ -612,12 +612,43 @@ section{
         font-size: 3.3rem;
     }
 
+    .cards_container {
+        padding-top: 30px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column;  */
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 50px 3%;
     
+        
     
+    }
 
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
+    .cards_container {
+        padding-top: 30px;
+        display: grid;
+        /* gap: 20px; */
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-direction: column;  */
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 50px 3%;
+    
+        
+    
+    }
+}
+
+@media (min-width: 1300px) {
     .main_container {
         flex-direction: row;
     }
@@ -634,6 +665,22 @@ section{
         width: 50%;
     }
 
+    .cards_container {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* flex-direction: row; */
+        gap:20px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 50px 3%;
+    
+        
+    
+    }
+    
     
 
     
@@ -824,4 +871,23 @@ footer p{
 
 .search:focus{
     outline: #000 1px solid;
+}
+
+/* .cards_container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 50px 3%;
+
+    
+
+}
+ */
+.card {
+    padding: 100px;
+    background-color: #1179BF;
 }
