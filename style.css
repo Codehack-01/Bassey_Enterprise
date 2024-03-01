@@ -970,3 +970,17 @@ footer p{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
     cursor: pointer;
 }
+
+.loader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 15px;
+
+}
+
+/* .loader img{
+    display: flex;
+    justify-content: center;
+
+} */
