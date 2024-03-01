@@ -611,7 +611,7 @@ section{
         color: #fff;
         font-size: 3.3rem;
     }
-    
+
     
     
 
@@ -633,6 +633,8 @@ section{
     .right_pane {
         width: 50%;
     }
+
+    
 
     
     
@@ -782,4 +784,44 @@ footer {
 
 footer p{
     text-align: center;
+}
+
+/* .shop_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+.shop_container span{
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search {
+    align-items: center;
+    display: flex;
+    width: 70%;
+    padding: 10px 15px 10px 15px;
+    /* border: #000 1px solid; */
+    border-radius: 25px;
+    background-color: rgb(247, 249, 249);
+    
+}
+
+.search input {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    background-color: rgb(247, 249, 249);
+}
+
+.search:focus{
+    outline: #000 1px solid;
 }
