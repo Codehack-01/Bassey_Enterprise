@@ -16,8 +16,7 @@
 }
 
 body {
-    margin: 0px;
-    /* background-color: var(--primary-color); */ 
+    margin: 0px; 
     background-repeat: no-repeat;
     height: 100vh;
     font-family: 'Lato', monospace;
@@ -45,9 +44,6 @@ body {
 
 }
 
-/* .overall-container{
-    z-index: 2;
-} */
 
 nav {
     z-index: 20;
@@ -60,16 +56,6 @@ section{
     position: relative;
 }
 
-
-/*.content-container {
-    z-index: 20;
-} */
-
-
-/* nav {
-    background-color: var(--blue-bg); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
 
 .Navbar{
     margin-left: auto;
@@ -114,11 +100,7 @@ section{
 }
 
 
-/* .Navbar img{
-    width: 200px;
-    height: 39px;
-    flex-shrink: 0;
-} */
+
 .Navbar ul {
     float: right;
     display: none;
@@ -195,10 +177,7 @@ section{
     border: none;
     padding: 13px 21px 13px 21px;
     cursor: pointer;
-    /* color: #000;
-    border: #000 1px solid;
-    padding: 11px 19px 11px 19px;
-    cursor: pointer; */
+    
 }
 
 @media (min-width: 768px) {
@@ -231,25 +210,10 @@ section{
         flex-direction: column;
     }
 
-    /* .home-content .brand-name{
-        color: #fff; 
-        font-size: 10rem;
-    } */
+    
 }
 
-/* @media (max-width: 900px) {
-    .Navbar li {
-        display: inline-block;
-        margin: 0 40px; 
-        line-height: normal;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: -0.01px;
-        cursor: pointer;
-        
-    
-    }
-} */
+
 
 .Navbar li {
     display: inline-block;
@@ -313,10 +277,6 @@ section{
     align-items: center;
 }
 
-/* .menu li a, .menu li a:hover
-{ padding: 0 0 0 40px;
-  display: block;
-  background: transparent url(link.png) no-repeat left center;}  */
 
 .menu .active{ 
     background-color: #000;
@@ -833,12 +793,7 @@ footer p{
     text-align: center;
 }
 
-/* .shop_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
+
 .shop_container span{
     /* text-align: center; */
     font-size: 2rem;
@@ -873,20 +828,7 @@ footer p{
     outline: #000 1px solid;
 }
 
-/* .cards_container {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    padding: 50px 3%;
 
-    
-
-}
- */
 .card {
     padding: 10px;
     background-color: #fff;
@@ -896,9 +838,7 @@ footer p{
     border-radius: 10px;
 }
 
-/* .images{
-    height: 90%;
-} */
+
 
 .images img{
     width: 100%;
@@ -979,8 +919,3 @@ footer p{
 
 }
 
-/* .loader img{
-    display: flex;
-    justify-content: center;
-
-} */
