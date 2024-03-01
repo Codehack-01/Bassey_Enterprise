@@ -588,7 +588,7 @@ section{
     color: var(--paragraph);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     
 
     .left_pane {
@@ -648,7 +648,7 @@ section{
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
     .main_container {
         flex-direction: row;
     }
@@ -914,6 +914,7 @@ footer p{
 .buttons2 {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
     
 }
 
